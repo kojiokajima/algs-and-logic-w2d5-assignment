@@ -24,7 +24,6 @@ const primeGenerator = function(n) {
   primeArray = array.filter(num => num != 0);
 
   return primeArray;
-
 }
 
 console.log(primeGenerator(100));

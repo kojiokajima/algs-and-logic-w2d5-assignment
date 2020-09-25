@@ -14,11 +14,9 @@ const lcm = function(a, b) {
     return newA === 0 ? newB : newA;
   }
 
-  let result = getGcd(a, b) * (a / getGcd(a, b) * (b / getGcd(a, b)));
+  let result = getGcd(a, b) * (a / getGcd(a, b)) * (b / getGcd(a, b));
 
   return result;
-
 }
-
 
 console.log(lcm(18, 42));

@@ -2,6 +2,7 @@
 
 const gcd = function(a, b) {
   // your code here
+  
   newA = a >= b ? a : b;
   newB = a > b ? b : a;
 

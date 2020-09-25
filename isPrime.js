@@ -9,8 +9,8 @@ const isPrime = function(num) {
       return false;
     }
   }
-  return true;
   
+  return true;
 }
 
 console.log(isPrime(17));
