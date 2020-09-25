@@ -4,7 +4,7 @@
 const primeGenerator = function(n) {
 // your code here
 
-// not sure I can use this
+// not sure I can use this from Google
   // array = [...Array(n - 1)].map((_, i) => i + 2);
 
 // insted of the above
@@ -14,11 +14,13 @@ const primeGenerator = function(n) {
   }
 
   for (let i = 2; i <= Math.sqrt(n); i++) {
+
     for (let j = i; j <= n; j++) {
       if (array[j] % i === 0) {
         array[j] = 0;
       }
     }
+    
   }
 
   primeArray = array.filter(num => num != 0);
